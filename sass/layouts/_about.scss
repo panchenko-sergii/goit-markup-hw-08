@@ -1,0 +1,36 @@
+.about-title {
+	margin-bottom: 50px;
+	font-size: 36px;
+	line-height: 1.1666;
+	text-align: center;
+	color: var(--color-text-black);
+}
+
+.about-picture {
+	margin-top: 50px;
+	list-style: none;
+	display: flex;
+	gap: 30px;
+}
+
+.about-picture-title {
+	flex-basis: calc((100% - 90px) / 4);
+	position: relative;
+}
+
+.about-picture-text {
+	position: absolute;
+    height: 70px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient( rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8) );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
