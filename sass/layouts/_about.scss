@@ -1,9 +1,20 @@
+.about {
+    @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .about-title {
-	margin-bottom: 50px;
-	font-size: 36px;
-	line-height: 1.1666;
+	margin-bottom: 30px;
+	font-size: 28px;
+	line-height: 1.1785;
 	text-align: center;
 	color: var(--color-text-black);
+  @media screen and (min-width:1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.1666;
+  }
 }
 
 .about-picture {
@@ -14,7 +25,7 @@
 }
 
 .about-picture-title {
-	flex-basis: calc((100% - 90px) / 4);
+	flex-basis: calc((100% - 60px) / 3);
 	position: relative;
 }
 

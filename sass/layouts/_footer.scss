@@ -6,7 +6,29 @@
 
 footer .container {
 	display: flex;
-	align-items: baseline;
+	align-items: center;
+	justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: baseline;
+      text-align: left;
+    }
+}
+
+.footer-main {
+	// width: 226px;
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
 }
 
 .footer__logo {
@@ -33,7 +55,10 @@ footer .container {
 }
 
 .footer-contact-item:not(:last-child) {
-	margin-bottom: 9px;
+	margin-bottom: 8px;
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 9px;
+}
 }
 
 .footer-map-link {
@@ -67,7 +92,14 @@ footer .container {
 }
 
 .social-block {
-	padding-left: 70px;
+	margin-bottom: 60px;
+	@media screen and (min-width: 768px) {
+	  margin-left: 165px;
+	  margin-bottom: 0;
+	}
+	@media screen and (min-width: 1200px) {
+	  margin-left: 70px;
+	}
 }
 
 .social-title {
@@ -114,26 +146,42 @@ footer .container {
 }
 
 .subscribe-input {
-	outline: none;
-	padding: 15px;
-	min-width: 358px;
-	font-size: 16px;
-	line-height: 1.25;
-	letter-spacing: 0.03em;
-	color: rgba(255, 255, 255, 0.6);
-	background-color: transparent;
-	border: 1px solid rgba(255, 255, 255, 0.3);
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-	border-radius: 4px;
-	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-	&:focus {
-		border: 1px solid var(--color-link-blue);
-	}
+    padding: 15px;
+    margin-bottom: 20px;
+    min-width: 290px;
+    @media screen and (min-width: 480px) {
+      min-width: 450px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: block;
+    }
+    @media screen and (min-width: 1200px) {
+      display: inline-block;
+      min-width: 358px;
+      margin-bottom: 0;
+    }
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
 }
 
 .subscribe {
-	padding-left: 93px;
-}
+		@media screen and (min-width: 768px) and (max-width: 1199px) {
+		margin-left: 14px;
+	  }
+	  @media screen and (min-width: 1200px) {
+		margin-left: 93px;
+		// padding-left: 93px;
+		& form {
+		  display: flex;
+		  flex-wrap: nowrap;
+		}
+}}
 
 .subscribe-button {
 	display: inline-block;

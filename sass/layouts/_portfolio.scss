@@ -1,9 +1,22 @@
 .portfolio-button-list {
-	list-style: none;
 	display: flex;
-	margin-bottom: 50px;
-	justify-content: center;
-	gap: 8px;
+    flex-wrap: wrap;
+    justify-content: left;
+	margin-bottom: 40px;
+	@include tablet {
+		margin-bottom: 30px;
+		justify-content: center;
+		gap: 8px;
+	}
+	@include desktop {
+		margin-bottom: 50px;
+	}
+}
+
+.portfolio-button-list li {
+    display: block;
+	margin-right: 8px;
+    margin-bottom: 15px;
 }
 
 .portfolio-button-item {
@@ -35,14 +48,23 @@
 }
 
 .portfolio-examples {
-	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
 }
 
+.portfolio-examples:not(:last-child) {
+    margin-bottom: 30px;
+}
+
 .portfolio-examples-list {
-	flex-basis: calc((100% - 60px) / 3);
+	width: 100%;
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		flex-basis: calc((100% - 30px)/2);
+	}
+	@media screen and (min-width:1200px) {
+		flex-basis: calc((100% - 60px) / 3);
+	}
 }
 
 .portfolio-top-wrap {
