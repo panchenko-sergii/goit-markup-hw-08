@@ -619,29 +619,29 @@ section {
   margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: var(--gra), url(../../img/hero-bg-mob.jpg);
+  background-image: var(--gra), url(../img/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--gra), url(../../img/hero-bg-mob-2x.jpg);
+    background-image: var(--gra), url(../img/hero-bg-mob-2x.jpg);
   }
 }
 @media screen and (min-width: 480px) {
   .hero {
-    background-image: var(--gra), url(../../img/hero-bg-tab.jpg);
+    background-image: var(--gra), url(../img/hero-bg-tab.jpg);
   }
 }
 @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--gra), url(../../img/hero-bg-tab-2x.jpg);
+    background-image: var(--gra), url(../img/hero-bg-tab-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: var(--gra), url(../../img/hero.jpg);
+    background-image: var(--gra), url(../img/hero.jpg);
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -649,7 +649,7 @@ section {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--gra), url(../../img/hero-2x.jpg);
+    background-image: var(--gra), url(../img/hero-2x.jpg);
   }
 }
 
